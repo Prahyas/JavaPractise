@@ -1,20 +1,17 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter first number?");
-        String a = scanner.nextLine();
-        System.out.println("Enter second number?");
-        String b = scanner.nextLine();
-
-        int sum = Integer.parseInt(a) + Integer.parseInt(b);
-        int product = Integer.parseInt(a) * Integer.parseInt(b);
-
-        float test = Float.parseFloat(sum + Integer.toString(product));
-
-        System.out.println(sum);
-        System.out.println(product);
-        System.out.println(test);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        try {
+            System.out.println("Enter your age?");
+            int myName = reader.read();
+        System.out.println("My name is " + myName);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
