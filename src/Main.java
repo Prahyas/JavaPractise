@@ -5,13 +5,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        try {
-            System.out.println("Enter your age?");
-            int myName = reader.read();
-        System.out.println("My name is " + myName);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+  Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter your number");
+        int a = scanner.nextInt();
+        scanner.nextLine();
+
+        System.out.println((a & 1) == 0 ? "Even" : "Odd");
+
     }
 }
