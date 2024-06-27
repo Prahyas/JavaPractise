@@ -1,10 +1,10 @@
-public class Honda extends Car{
-    private String carName;
+public class Honda<T> {
+    private T carName;
 
-    public Honda(String carName){
+    public Honda(T carName){
         this.carName = carName;
     }
-    @Override
+
     void drive() {
         System.out.println("I drove " + carName);
     }

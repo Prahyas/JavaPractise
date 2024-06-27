@@ -5,12 +5,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-  Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter your number");
-        int a = scanner.nextInt();
-        scanner.nextLine();
-
-        System.out.println((a & 1) == 0 ? "Even" : "Odd");
-
+int[] arr = {1,2,3};
+    for(int a : arr){
+        System.out.println(a);
+        System.out.println();
+    }
     }
 }
