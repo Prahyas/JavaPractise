@@ -1,12 +1,12 @@
-public class Honda<T> {
-    private T carName;
+public class Honda extends Car {
+    private String make;
 
-    public Honda(T carName){
-        this.carName = carName;
+    public Honda(String make, int wheels) {
+        super(wheels);
+        this.make = make;
     }
 
-    void drive() {
-        System.out.println("I drove " + carName);
+    public void displayCar() {
+        System.out.println("I drive " + make + " car and it has " + getMake() + " wheels");
     }
-
 }
