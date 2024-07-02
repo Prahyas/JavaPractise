@@ -1,8 +1,8 @@
 public abstract class BankAccount {
 
-    protected static int balance = 0;
+    protected static double balance = 0;
 
-    public int getBalance() {
+    public double getBalance() {
         return balance;
     }
 
@@ -11,6 +11,6 @@ public abstract class BankAccount {
         balance += amount;
     }
 
-    abstract void withdraw(int amount);
+    abstract void withdraw(double amount);
 
 }

@@ -1,7 +1,7 @@
 public class SavingsAccount extends BankAccount {
 
     @Override
-    void withdraw(int amount) {
-        balance -= (amount + 20);
+    void withdraw(double amount) {
+        balance -= (amount + 20.00);
     }
 }
