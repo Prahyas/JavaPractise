@@ -1,19 +1,17 @@
-public class Car {
+public abstract class Car {
     private int wheels;
 
     public Car(int wheels) {
         this.wheels = wheels;
     }
 
-    public int getMake() {
+    public int getWheels() {
         return wheels;
     }
 
-    public void setMake(int wheels) {
+    public void setWheels(int wheels) {
         this.wheels = wheels;
     }
 
-    public void displayMake() {
-        System.out.println("I have a " + wheels + " car.");
-    }
+    abstract void displayWheels();
 }
