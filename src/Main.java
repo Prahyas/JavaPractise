@@ -2,8 +2,13 @@ public class Main {
 
 
     public static void main(String[] args) {
-        Honda honda = new Honda("Honda CRV", 4);
-        honda.displayWheels();
-        // this is a comment
+        CheckingAccount prahyas = new CheckingAccount();
+        prahyas.deposit(1000);
+        prahyas.withdraw(10);
+        System.out.println(prahyas.getBalance());
+
+        SavingsAccount prahyasSaving = new SavingsAccount();
+        prahyasSaving.withdraw(10);
+        System.out.println(prahyasSaving.getBalance());
     }
 }
