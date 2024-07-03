@@ -2,14 +2,20 @@ public class Main {
 
 
     public static void main(String[] args) {
-        CheckingAccount prahyas = new CheckingAccount();
-        prahyas.deposit(1000);
-        prahyas.applyInterest();
-        prahyas.withdraw(10);
-        System.out.println(prahyas.getBalance());
+        String[] myString = {"abc", "cb", "a"};
+        String result = longest(3, myString);
+        System.out.println(result);
+    }
 
-        SavingsAccount prahyasSaving = new SavingsAccount();
-        prahyasSaving.withdraw(10);
-        System.out.println(prahyasSaving.getBalance());
+    public static String longest(int n, String[] names) {
+        String longestName = names[0];
+
+        for (int i = 1; i < n; i++) {
+            if (names[i].length() > longestName.length()) {
+                longestName = names[i];
+            }
+        }
+
+        return longestName;
     }
 }
