@@ -7,6 +7,8 @@ public class Main {
         System.out.println(result);
     }
 
+
+    // longest string
     public static String longest(int n, String[] names) {
         String longestName = names[0];
 
