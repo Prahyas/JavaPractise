@@ -8,7 +8,7 @@ public class Main {
     }
 
 
-    // longest string practise
+    // longest string practise only
     public static String longest(int n, String[] names) {
         String longestName = names[0];
 
