@@ -1,12 +1,20 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
         try {
-            Hobbies hobbies = new Hobbies("Prayash", "Coding");
-            hobbies.displayName();
 
-            System.out.println(sum(10, 20));
-            System.out.println(sum(10, 20, 30));
+            List<Integer> names = new ArrayList<>();
+
+            names.add(10);
+            names.add(20);
+            names.add(30);
+
+            int filteredNames = names.stream().reduce(0, (a, b) -> a + b);
+
+            System.out.println(filteredNames);
 
 
         } catch (Exception e) {
@@ -16,11 +24,4 @@ public class Main {
     }
 
 
-    public static int sum(int a, int b) {
-        return a + b;
-    }
-
-    public static int sum(int a, int b, int c) {
-        return a + b + c;
-    }
 }
