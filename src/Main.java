@@ -1,20 +1,12 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.time.LocalDate;
 
 public class Main {
 
     public static void main(String[] args) {
         try {
 
-            List<Integer> names = new ArrayList<>();
-
-            names.add(10);
-            names.add(20);
-            names.add(30);
-
-            int filteredNames = names.stream().reduce(0, (a, b) -> a + b);
-
-            System.out.println(filteredNames);
+            LocalDate today = LocalDate.now();
+            System.out.println(today.getMonth());
 
 
         } catch (Exception e) {
