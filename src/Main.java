@@ -1,13 +1,10 @@
-import java.time.LocalDate;
-
 public class Main {
 
     public static void main(String[] args) {
         try {
 
-            LocalDate today = LocalDate.now();
-            System.out.println(today.getMonth());
-
+            int result = sum(10, 20);
+            System.out.println(result);
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -15,5 +12,7 @@ public class Main {
 
     }
 
-
+    public static int sum(int a, int b) {
+        return a + b;
+    }
 }
